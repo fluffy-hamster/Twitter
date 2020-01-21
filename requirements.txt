@@ -1,0 +1,6 @@
+twython==3.7.0
+validators==0.14.1
+pandas==0.25.1
+pause==0.2
+requests==2.22.0
+Pillow==7.0.0

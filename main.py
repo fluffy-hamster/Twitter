@@ -16,7 +16,7 @@ tweet_index = 0 ## keeps track of where we are in the database.
 
 def get_tweet_from_dataframe(dataframe: pd.DataFrame, index: int) -> Union[None, pd.Series]:
     """
-        simple wrapper for the iloc command.
+        simple wrapper for the iloc mrthod.
     """
 
     try:
@@ -37,7 +37,7 @@ if __name__ == "__main__":
     twitter_api = TwythonWrapper()
 
     ## load excel sheet
-    tweet_data = df = pd.read_excel(EXCEL_FILE_PATH, sheet_name="data_table")
+    tweet_data = pd.read_excel(EXCEL_FILE_PATH, sheet_name="data_table")
 
     ## Remove rows where the date has already expired.
     ## Note that these two lines will remove everything given the current dataset.

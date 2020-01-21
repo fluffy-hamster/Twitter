@@ -3,7 +3,6 @@ import pause
 import os
 import validators
 from datetime import datetime
-from typing import Union
 
 from twitter import TwythonWrapper, MAX_TWEET_LENGTH
 from images import load_image_from_url, get_logo, merge_images
@@ -14,9 +13,9 @@ EXCEL_FILE_PATH = r".\tmp\GrowthAnalytics_python test_EDITED.xlsx"
 
 tweet_index = 0 ## keeps track of where we are in the database.
 
-def get_tweet_from_dataframe(dataframe: pd.DataFrame, index: int) -> Union[None, pd.Series]:
+def get_tweet_from_dataframe(dataframe: pd.DataFrame, index: int):
     """
-        simple wrapper for the iloc mrthod.
+        simple wrapper for the iloc method.
     """
 
     try:
